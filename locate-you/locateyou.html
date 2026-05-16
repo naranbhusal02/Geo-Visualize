@@ -5,12 +5,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Track your Location</title>
+    <title>Geo Visualize</title>
     <!-- Leaflet CSS-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form id="coordinate-form" class="coordinate-form">
+        <label>
+            Latitude
+            <input id="latitude" name="latitude" type="number" step="any" min="-90" max="90" placeholder="90" required>
+        </label>
+        <label>
+            Longitude
+            <input id="longitude" name="longitude" type="number" step="any" min="-180" max="180" placeholder="180" required>
+        </label>
+        <button type="submit">Track It</button>
+    </form>
     <div id="map" class="map"></div>
 </body>
 
