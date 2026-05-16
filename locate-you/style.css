@@ -50,3 +50,12 @@ body {
 .coordinate-form button:hover {
     background: #1857b6;
 }
+
+/* Page-specific overrides: make body transparent and map background white */
+body {
+    background: transparent !important;
+}
+
+#map {
+    background-color: #ffffff;
+}
