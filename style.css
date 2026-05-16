@@ -1,0 +1,36 @@
+body {
+    background-color: #1f6feb;
+}
+
+
+.title {
+    font-size: 30px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 520px;
+}
+ .container {
+    background-color: white;
+    height: 450px;
+    width: 1000px;
+    opacity: 70%;
+    margin-left: 115px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+p {
+    opacity: 100%;
+    color: #1f6feb;
+}
+
+.btn {
+height: 40px;
+width: 350px;
+font-size: 20px;
+font-family: Courier;
+}
+
+a {
+    text-decoration: none;
+}
