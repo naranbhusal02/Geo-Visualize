@@ -29,8 +29,16 @@ document.getElementById('coordinate-form').addEventListener('submit', function (
     var latLng = [latitude, longitude];
 
     marker.setLatLng(latLng)
-        .setPopupContent('Got your location now youre cooked ' + latitude + ', ' + longitude)
+        .setPopupContent('Got your location ' + latitude + ', ' + longitude)
         .openPopup();
+
+
+        var circle = L.circle(latLng, {
+            color: 'red',
+            fillColor: '#1f6feb',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
 
     map.setView(latLng, 13);
 });
